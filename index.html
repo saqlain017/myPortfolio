@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhammad Saqlain</title>
+    <link rel="icon" href="/ico.png">
+
+    <!-- Bootstrap Style Sheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- Font Awesome Style Sheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- My Style sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <nav id="myNavBar">
+        <div class="container navContainer">
+            <img src="./assets/imgs/myLogo.png" alt="Name" width="200" loading="lazy">
+            <ul id="myNavList">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contactUs">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="menuBtn">
+        <button onclick="myNavToggle()"><i id="openBtn" class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
+    </div>
+    <section id="home">
+        <div class="container homeContainer">
+            <div class="home-text">
+                <h2>Frontend Web Developer</h2>
+                <h1>Hey, I'm <strong>Muhammad Saqlain</strong><br> from Pakistan</h1>
+            </div>
+            <div class="home-image">
+                <img src="./assets/imgs/background.png" alt="imageUnknown" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row aboutRow">
+                <div class="about-image col-lg-3 col-md-3">
+                    <img src="./assets/imgs/saqlain.jpg" alt="imageUser" loading="lazy" class="userImg">
+                </div>
+                <div class="about-content col-lg-8 col-md-9">
+                    <h2><strong>About Me</strong></h2>
+                    <p>Muhammad Saqlain, an energetic and passionate Frontend Developer intern with a drive to create user experiences through html, css, javascript and bootstrap.I plan to seek career advancement and a challenging work environment that offers stimulating learning to leverage strong technical and problem-solving skills and extensive web development knowledge to achieve organizational efficiency, reduce page load speeds, and optimize user interfaces.</p>
+                    <ul class="headingUl">
+                        <li><a data-target="skills-content" onclick="contentDisplay(this)">Skills</a></li>
+                        <li><a data-target="experience-content" onclick="contentDisplay(this)">Experience</a></li>
+                        <li><a data-target="education-content" onclick="contentDisplay(this)">Education</a></li>
+                        <li><a data-target="certification-content" onclick="contentDisplay(this)">Certifications</a></li>
+                    </ul>
+                    <div id="skills-content">
+                        <div class="skills-content-uls">
+                            <ul class="technical">
+                                <li style="color:rgb(196 10 50 / 91%);"><b>Technical Skills</b></li>
+                                <li>HTML5/CSS3</li>
+                                <li>JavaScript</li>
+                                <li>Bootstrap5</li>
+                                <li>Responsive Design</li>
+                                <li>Cross-Browser Compatibility</li>
+                                <li>Version Control (Git) -- basic </li>
+                                <li>Web Performance Optimization </li>
+                            </ul>
+                            <ul class="soft">
+                                <li style="color:rgb(196 10 50 / 91%);"><b>Soft Skills</b></li>
+                                <li>Problem Solving and Critical Thinking </li>
+                                <li>Time Management and Prioritization</li>
+                                <li>Collaboration and Teamwork</li>
+                                <li>Communication and Interpersonal Skills</li>
+                                <li>Analytical and Logical Thinking</li>
+                                <li> Self-Motivation and Initiative</li>
+                                <li>Continuous Learning and Improvement</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="experience-content">
+                        <ul>
+                            <li><h6>Intern Frontend Developer</h6></li>
+                            <li>At iCreativez since June 12, 2023</li>
+                            <ul style="list-style: disc;">
+                                <li>Developed a responsive website UI using HTML, CSS, and JavaScript that reduced 
+                                    overall page load speed by 15%</li>
+                                <li>Enhanced the usability of existing applications by applying the latest accessibility 
+                                    standards and best practices</li>
+                                <li>Collaborated with project managers to successfully deliver projects on time, resulting in 
+                                    an increase in organizational efficiency</li>
+                                <li> Participated on weekly tech team meetings to discuss current and future projects and 
+                                    strategies on how to produce efficient work</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div id="education-content">
+                        <ul>
+                            <li><h6 class="edu-heading">Bachelor of Science: Computer Science – Jan 2022 to Since (Currently 4th semester)</h6><h6>DCS UBIT University of Karachi</h6></li>
+                            <li><h6 class="edu-heading">Intermediate: Pre-Engineering – 2021</h6><h6>NCR College of Emerging Technologies, Karachi</h6><h6>BIEK – 95%</h6></li>
+                            <li><h6 class="edu-heading">Matriculation: Computer Science – 2019</h6><h6>Ghulaman-e-Abbas School, Karachi.</h6><h6>AKUEB - 85%</h6></li>
+                        </ul>
+                    </div>
+                    <div id="certification-content">
+                        <ul>
+                            <li><h6>Crash Course on Python By Google</h6><a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/DMYUTUPZN2RZ">https://www.coursera.org/account/accomplishments/certificate/DMYUTUPZN2RZ</a></li>
+                            <li><h6>Introduction to Front-End Development By Meta</h6><a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/QABLEAPLXZHP">https://www.coursera.org/account/accomplishments/certificate/QABLEAPLXZHP</a></li>
+                            <li><h6>Getting Started with Git and GitHub By IBM</h6><a target="_blank" href="https://www.coursera.org/account/accomplishments/certificate/A9K55M92HCR2">https://www.coursera.org/account/accomplishments/certificate/A9K55M92HCR2</a></li>
+                            <li><h6>Introduction to Data Science By IBM</h6><a target="_blank" href="https://www.coursera.org/account/accomplishments/verify/YCPVPRRFU6QY">https://www.coursera.org/account/accomplishments/verify/YCPVPRRFU6QY</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2><strong>My Services</strong></h2>
+            <div class="myContainer">
+                <div class="myService">
+                    <img src="./assets/imgs/responsive.svg" alt="Responsive Web Design" loading="lazy" width="80">
+                    <div class="myService-Content">
+                        <h4>
+                            Responsive Web Design
+                        </h4>
+                        <p>
+                            Enterprise-class websites need consistent colors, fonts, and design to match the organization's branding guidelines. Expert at designing responsive websites, with CSS at the core of front end development alongside JavaScript and HTML.
+                        </p>
+                        <a href="javascript:void(0)">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+                <div class="myService">
+                    <img src="./assets/imgs/psd-bs.svg" alt="PSD to Bootstrap" loading="lazy" width="80">
+                    <div class="myService-Content">
+                        <h4>
+                            PSD to Bootstrap
+                        </h4>
+                        <p>
+                            Convert PSD into pixel-perfect standards that are compliant with HTML5, CSS3 and Bootstrap5 templates.
+                        </p>
+                        <a href="javascript:void(0)">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+                <div class="myService">
+                    <img src="./assets/imgs/react.svg" alt="React Development" loading="lazy" width="80">
+                    <div class="myService-Content">
+                        <h4>
+                            React JS Development
+                        </h4>
+                        <p>
+                            ReactJS is renowned for its extensibility, adjustability, and convenience. Create complex software using ReactJS for your business, including web browsers and mobile application user interfaces.
+                        </p>
+                        <a href="javascript:void(0)">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h2><strong>My Work</strong></h2>
+            <div class="myContainer">
+                <div class="myWork hair-dresser">
+                    <div class="myWork-content">
+                        <div class="myButton">
+                            <button><a href="https://saqlain017.github.io/Hair_Dresser/" target="_blank">Visit Website</a></button>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="myWork iCreativez">
+                    <div class="myWork-content">
+                        <div class="myButton">
+                            <button><a href="https://saqlain017.github.io/testing/" target="_blank">Visit Website</a></button>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="myWork toDo">
+                    <div class="myWork-content">
+                        <div class="myButton">
+                            <button><a href="https://saqlain017.github.io/toDo/" target="_blank">Visit Website</a></button>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactUs">
+        <div class="container">
+            <div class="contact">
+                <div class="contact-details">
+                    <h2 style="font-size: 50px;"><strong>Contact Me</strong></h2>
+                    <a href="mailTo:mohammadsaqlain253@gmail.com"><i class="fa-solid fa-envelope" style="color:#ff004f;"></i> <span>mohammadsaqlain253@gmail.com</span></a>
+                    <a href="tel:03498725789"><i class="fa-solid fa-phone" style="color:#ff004f;"></i> <span>0349-8725789</span></a>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/mohammad.saqlain.75033" target="_blank"><i class="fa-brands fa-facebook" style="font-size: 30px;"></i></a><a href="https://github.com/saqlain017" target="_blank"><i class="fa-brands fa-github" style="font-size: 30px;"></i></a><a href="https://www.linkedin.com/in/muhammad-saqlain-95104221a" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 30px;"></i></a>
+                    </div>
+                    <div class="myButton">
+                        <button><a href="/assets/imgs/Saqlain_resume.pdf" download="Saqlain_resume.pdf">Download Resume</a></button>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="get">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <textarea cols="30" rows="7 " placeholder="Your Message"></textarea>
+                        <div class="myButton">
+                            <button type="submit" style="min-width: 200px;"><a>Submit</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

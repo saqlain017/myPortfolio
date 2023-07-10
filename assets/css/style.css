@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+ul{
+    list-style: none;
+}
+/* nav#myNavBar */
+nav#myNavBar{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100000;
+}
+nav#myNavBar .navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav#myNavBar .navContainer ul#myNavList{
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 60%;
+}
+
+/* Menu Button */
+div#menuBtn{
+    position: fixed;
+    top: 4%;
+    right: 25px;
+    display: none;
+}
+div#menuBtn button{
+    background:transparent;
+    border: 0;
+    outline: 0;
+}
+div#menuBtn button i{
+    font-size: 20px;
+}
+
+@media screen and (max-width:992px) {
+    nav#myNavBar .navContainer ul#myNavList{
+    max-width: 250px;
+    min-width: 250px;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    right: 0;
+    flex-direction: column;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    row-gap: 60px;
+    justify-content: flex-start;
+    display: none;
+    transition: 0.5s;
+    padding-top: 5%;
+}
+div#menuBtn{
+    display: block;
+    z-index: 1000000;
+}
+
+}
+@media screen and (max-width:552px){
+    nav#myNavBar .navContainer ul#myNavList{
+        padding-top: 10% !important;
+    }
+}
+
+
+/* section#home */
+section#home{
+    background-color: black;
+    padding: 125px 0 102px;
+}
+section#home .homeContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section#home .homeContainer .home-text{
+    flex-basis: 50%;
+    color: white;
+}
+section#home .homeContainer .home-text h1{
+    padding-top: 30px;
+    line-height: 60px;
+}
+section#home .homeContainer .home-text h1 strong{
+    color: #ff004f;
+}
+section#home .homeContainer .home-image{
+    flex-basis: 50%;
+}
+section#home .homeContainer .home-image img{
+    width: 100%;
+}
+
+@media screen and (max-width:1200px){
+    section#home .homeContainer .home-text h1{
+        line-height: 45px;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:992px){
+    section#home .homeContainer .home-text h2{
+        font-size: 28px;
+    }
+    section#home .homeContainer .home-text h1{
+        font-size: 35px;
+        padding-top: 15px;
+    }
+    section#home .homeContainer{
+        flex-direction: column;
+    }
+    section#home .homeContainer .home-text{
+        flex-basis: 100% !important;
+        text-align: center;
+    }
+    section#home .homeContainer .home-image{
+        flex-basis: 100% !important;
+    }
+}
+
+@media screen and (max-width:552px){
+    section#home .homeContainer .home-text h2{
+        font-size: 23px;
+    }
+    section#home .homeContainer .home-text h1{
+        font-size: 40px;
+        padding-top: 15px;
+    }
+}
+
+/* section#about*/
+section#about{
+    background: black;
+    padding-bottom: 101px;
+    color: white;
+}
+section#about h2{
+    color: #ff004f;
+}
+section#about .userImg{
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+section#about .about-content h6{
+    color: rgb(196 10 50 / 91%);
+}
+section#about  .about-content ul.headingUl{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+section#about .about-content ul.headingUl li{
+    transition: 0.5s;
+}
+section#about .about-content ul.headingUl li:hover{
+    text-decoration: underline 4px solid;
+    padding-top: 3px;
+    text-decoration-color: rgba(124, 23, 45, 0.911);
+}
+section#about .about-content #education-content h6{
+    color: white;
+}
+section#about .about-content #education-content h6.edu-heading{
+    color: rgb(196 10 50 / 91%) ;
+}
+.skills-content-uls{
+    display: flex;
+}
+#education-content{
+    display: none;
+}
+#experience-content{
+    display: none;
+}
+#certification-content{
+    display: none;
+}
+#certification-content a{
+    color: #0000EE;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+@media screen and (max-width:1200px){
+    #certification-content p a{
+        color: #0000EE;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    #skills-content .skills-content-uls .soft{
+        padding-left: 13px;
+    }
+}
+@media screen and (max-width:992px){
+    section#about .aboutRow{
+        display: flex;
+        flex-direction: column;
+    }
+    section#about .about-image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        }
+    section#about .userImg{
+         width: 50%;
+    }
+    section#about .about-content{
+        width: 100%;
+        padding-left: 5%;
+        padding-top: 30px;
+    }
+    #certification-content a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:786px){
+    section#about  .about-content ul.headingUl{
+        column-gap: 20px;
+    }
+    #skills-content,
+    #experience-content{
+        font-size: 13px;
+    }
+    #skills-content b{
+        font-size: 15px;
+    }
+    section#about .about-content #education-content h6{
+        font-size: 13px;
+    }
+    section#about .about-content #education-content h6.edu-heading{
+        font-size: 15px;
+    }
+    #certification-content h6{
+        font-size: 15px;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+    #certification-content a{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:552px){
+    section#about  .about-content ul.headingUl{
+        display: flex;
+        align-items: start;
+        flex-direction: column-reverse;
+        padding-left: 0;
+    }
+    #education-content ul,
+    #experience-content>ul,
+    #certification-content ul,
+    .technical,
+    .soft{
+        padding-left: 0 !important;
+    }
+    .skills-content-uls{
+        flex-direction: column;
+    }
+    #certification-content a{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:440px){
+    #certification-content a{
+        font-size: 7px;
+    }
+}
+
+/* My Services */
+section#services{
+    background-color: black;
+    color: white;
+    padding-bottom: 101px;
+}
+section#services a{
+    font-size: 15px;
+    color: #0000EE;
+}
+section#services h2{
+    color: rgb(196 10 50 / 91%);
+    margin-bottom: 30px;
+}
+section#services .myContainer{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 5%;
+}
+section#services .myContainer .myService{
+    flex-basis: 30%;
+    min-height: 430px;
+    background: #202020d9;
+    padding: 20px;
+    border-radius: 15px;
+}
+section#services .myContainer .myService:hover{
+    flex-basis: 30%;
+    background: linear-gradient(black,rgb(196 10 50 / 91%));
+    padding: 20px;
+    border-radius: 15px;
+}
+section#services .myContainer .myService h4{
+    margin: 25px auto;
+}
+@media screen and (max-width:1200px){
+    section#services .myContainer .myService p{
+        font-size: 15px;
+    }
+    section#services .myContainer .myService{
+        min-height: 468px;
+}}
+@media screen and (max-width:992px){
+    section#services .myContainer .myService p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:786px){
+    section#services .myContainer{
+        flex-direction: column;
+        gap: 30px;
+    }
+    section#services .myContainer .myService{
+        min-height: 340px;
+    }
+}
+
+
+/* Portfolio */
+section#portfolio{
+    background-color: black;
+    color: white;
+    padding-bottom: 101px;
+}
+section#portfolio a{
+    font-size: 15px;
+    color: #0000EE;
+}
+section#portfolio h2{
+    color: #ff004f;
+    margin-bottom: 30px;
+}
+section#portfolio .myContainer{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 5%;
+}
+section#portfolio .myContainer .myWork{
+    flex-basis: 30%;
+    min-height: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 1;
+}
+section#portfolio .myContainer .myWork.hair-dresser{
+    background-image: url('../imgs/hair\ designer.PNG');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1000;
+}
+section#portfolio .myContainer .myWork.hair-dresser:hover{
+    filter: brightness(0.8) hue-rotate(191deg);
+}
+section#portfolio .myContainer .myWork.iCreativez{
+    background-image: url('../imgs/iCreativez.PNG');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1000;
+}
+section#portfolio .myContainer .myWork.iCreativez:hover{
+    filter: brightness(0.8) hue-rotate(191deg);
+}
+section#portfolio .myContainer .myWork.toDo{
+    background-image: url('../imgs/toDo.PNG');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 1000;
+}
+section#portfolio .myContainer .myWork.toDo:hover{
+    filter: brightness(0.8) hue-rotate(141deg);
+}
+section#portfolio .myContainer .myWork .myWork-content{
+    display: none;
+}
+section#portfolio .myContainer .myWork:hover .myWork-content{
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#portfolio .myContainer .myWork h4{
+    margin: 25px auto;
+}
+section#portfolio .myButton button{
+    background: black;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 15px 20px;
+}
+section#portfolio .myButton button a{
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+section#portfolio .myButton button:hover{
+    background: white;
+    transform: scale(1.05);
+    border: 1px dotted black;
+}
+section#portfolio .myButton button:hover a{
+    color: black;
+}
+@media screen and (max-width:992px){
+    section#portfolio .myContainer .myWork p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:786px){
+    section#portfolio .myContainer{
+        flex-direction: column;
+        gap: 30px;
+    }
+    section#portfolio .myContainer .myWork{
+        min-height: 340px;
+        width: 100%;
+    }
+    section#portfolio .myContainer .myWork:hover .myWork-content{
+        min-height: 340px;
+    }
+}
+
+/* Contact Us */
+section#contactUs{
+    background: black;
+    padding-bottom: 101px;
+    overflow-x: hidden !important;
+}
+section#contactUs h2{
+    color: #ff004f;
+    margin-bottom: 20px;
+}
+.contact{
+    display: flex;
+    align-items: start;
+    column-gap: 15%;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    flex-basis: 25%;
+}
+.contact-details a{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.contact-details a span{
+    font-size: 15px;
+}
+.social-links{
+    display: flex;
+    column-gap: 20px;
+}
+.social-links a {
+    display: block;
+    color: #737373;
+}
+.contact-form {
+    flex-basis: 60%;
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.contact-form form input{
+    background-color: #202020d9;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.contact-form form textarea{
+    background-color: #202020d9;
+    outline: 0;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.contact-form form button a{
+    color: white !important;
+}
+section#contactUs .myButton{
+    margin-top: 20px;
+}
+section#contactUs .myButton button{
+    background: #ff004f;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+section#contactUs .myButton button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    border: 0.5px solid #ff004f;
+}
+
+@media screen and (max-width:786px){
+    .contact{
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 50px;
+    }
+    .contact-details{
+        width: 100%;
+        align-items: center;
+    }
+    .contact-form{
+        width: 100%;
+    }
+    .contact-details a span{
+        font-size: 12px;
+    }
+}
